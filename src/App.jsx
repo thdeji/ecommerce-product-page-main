@@ -90,14 +90,14 @@ function App() {
             <div className="mt-5 md:flex md:gap-4">
               <div className="md:flex-1 bg-Light-grayish-blue p-4 flex justify-between rounded-lg">
                 <img
-                  src="/images/icon-minus.svg"
+                  src="./images/icon-minus.svg"
                   alt="minus.svg"
                   className="self-center hover:cursor-pointer"
                   onClick={handleDecrement}
                 />
                 <p className="font-bold self-center">{quantity}</p>
                 <img
-                  src="/images/icon-plus.svg"
+                  src="./images/icon-plus.svg"
                   alt="plus.svg"
                   className="self-center hover:cursor-pointer"
                   onClick={handleIncrement}
@@ -107,7 +107,7 @@ function App() {
               onClick={()=>{quantity>0 &&  setAddToCart(true)}}
               className="md:flex-2 bg-Orange gap-4 flex p-4 mt-4 mb-4 rounded-lg justify-center w-full hover:cursor-pointer">
                 <img
-                  src="/images/icon-cart.svg"
+                  src="./images/icon-cart.svg"
                   alt="icon-cart.svg"
                   className="h-4 self-center"
                 />
@@ -125,7 +125,7 @@ function App() {
                 <div className="font-sans mx-10 flex flex-col gap-4">
                   <div className="flex justify-around">
                     <img
-                      src="/images/image-product-1-thumbnail.jpg"
+                      src="./images/image-product-1-thumbnail.jpg"
                       alt="thumbnail"
                       className="w-[15%] rounded-md"
                     />
@@ -139,7 +139,7 @@ function App() {
                       </p>
                     </div>
                     <img
-                      src="/images/icon-delete.svg"
+                      src="./images/icon-delete.svg"
                       alt="delete-icon"
                       className="h-4 self-center"
                       onClick={()=> setAddToCart(false)}
