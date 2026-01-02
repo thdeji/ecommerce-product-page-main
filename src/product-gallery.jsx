@@ -2,10 +2,10 @@ import { useState } from "react";
 
 function ProductGallery() {
   const images = [
-    "./src/assets/images/image-product-1.jpg",
-    "./src/assets/images/image-product-2.jpg",
-    "./src/assets/images/image-product-3.jpg",
-    "./src/assets/images/image-product-4.jpg",
+    "/images/image-product-1.jpg",
+    "/images/image-product-2.jpg",
+    "/images/image-product-3.jpg",
+    "/images/image-product-4.jpg",
   ];
   const [imageIndex, setImageIndex] = useState(0);
 
@@ -38,13 +38,13 @@ function ProductGallery() {
       <div className="absolute flex justify-around gap-60 w-full mt-[50%] md:hidden">
         <img
           className="bg-white p-5 rounded-full hover:cursor-pointer"
-          src="./src/assets/images/icon-previous.svg"
+          src="/images/icon-previous.svg"
           alt="previous"
           onClick={handleDecrement}
         />
         <img
           className="bg-white p-5 rounded-full hover:cursor-pointer"
-          src="./src/assets/images/icon-next.svg"
+          src="/images/icon-next.svg"
           alt="next"
           onClick={handleIncrement}
         />
@@ -53,25 +53,25 @@ function ProductGallery() {
         <img src={images[imageIndex]} alt="imageProduct" className="md:rounded-2xl"/>
         <div className="hidden md:flex justify-between mt-4">
           <img
-            src="./src/assets/images/image-product-1-thumbnail.jpg"
+            src="/images/image-product-1-thumbnail.jpg"
             alt="image-thumbnail.img"
             className="w-1/5"
             onClick={()=> setImageIndex(0)}
           />
           <img
-            src="./src/assets/images/image-product-2-thumbnail.jpg"
+            src="/images/image-product-2-thumbnail.jpg"
             alt="image-thumbnail.img"
             className="w-1/5"
             onClick={()=> setImageIndex(1)}
           />
           <img
-            src="./src/assets/images/image-product-3-thumbnail.jpg"
+            src="/images/image-product-3-thumbnail.jpg"
             alt="image-thumbnail.img"
             className="w-1/5"
             onClick={()=> setImageIndex(2)}
           />
           <img
-            src="./src/assets/images/image-product-4-thumbnail.jpg"
+            src="/images/image-product-4-thumbnail.jpg"
             alt="image-thumbnail.img"
             className="w-1/5"
             onClick={()=> setImageIndex(3)}
